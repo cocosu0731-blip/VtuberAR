@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VtuberAR</title>
+    <title>幽咲ミントAR名刺</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #7b3fb3, #98ff98);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        img {
+            max-width: 300px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .speech {
+            background: white;
+            border-radius: 20px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        @keyframes float {
+            0%,100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Hello VtuberAR!</h1>
+    <div class="card">
+        <img src="IMG_0287.png" alt="幽咲ミント">
+        <div class="speech">
+            ヤッホー！幽咲ミントだよ！<br>
+            一緒に遊ぼ！！
+        </div>
+    </div>
 </body>
 </html>
